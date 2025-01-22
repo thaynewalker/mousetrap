@@ -17,4 +17,4 @@ class cat(pygame.sprite.Sprite):
         self.rect.y=y*48
 
     def coords(self):
-        return self.rect.x/48,self.rect.y/48
+        return self.rect.x//48,self.rect.y//48

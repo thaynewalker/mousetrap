@@ -12,7 +12,7 @@ class player(pygame.sprite.Sprite):
         # Pass in the color of the car, and its x and y position, width and height.
         # Set the background color and set it to be transparent
         #self.image = pygame.Surface([width, height])
-	self.image = pygame.image.load("game/mouse.png").convert_alpha()
+        self.image = pygame.image.load("game/mouse.png").convert_alpha()
         #self.image.fill(WHITE)
         #self.image.set_colorkey(WHITE)
  
@@ -28,4 +28,4 @@ class player(pygame.sprite.Sprite):
         self.rect.y=y*48
 
     def coords(self):
-        return self.rect.x/48,self.rect.y/48
+        return self.rect.x//48,self.rect.y//48

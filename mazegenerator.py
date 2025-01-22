@@ -63,12 +63,12 @@ def SquareMaze(cx,cy):
 
 def Generate(w,h):
     global mx,my,maze
-    mx=w-1
-    my=h-1
+    mx=int(round(w)-1)
+    my=int(round(h)-1)
     maze = [[1 for x in range(mx)] for y in range(my)]
     SquareMaze(0, 0)
     for line in maze:
-	line.append(1)
+        line.append(1)
         line.insert(0,1)
     maze.insert(0,[1 for x in range(mx+2)])
     maze.append([1 for x in range(mx+2)])

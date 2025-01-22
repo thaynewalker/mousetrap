@@ -12,7 +12,7 @@ class goal(pygame.sprite.Sprite):
         # Pass in the color of the car, and its x and y position, width and height.
         # Set the background color and set it to be transparent
         #self.image = pygame.Surface([width, height])
-	self.image = pygame.image.load("game/stink.png").convert_alpha()
+        self.image = pygame.image.load("game/stink.png").convert_alpha()
         #self.image.fill(WHITE)
         #self.image.set_colorkey(WHITE)
  
